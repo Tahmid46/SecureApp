@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".DashboardActivity">
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/searchId"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FFFF00"
+        android:text="Search Medicine"
+        android:textAllCaps="false"
+        android:textColor="#191970"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:drawablePadding="0dp"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/MedId"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#00c4ff"
+        android:text="My Medicines"
+        android:textAllCaps="false"
+        android:textColor="#191970"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/notiId"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff5e00"
+        android:text="Medicine Alarm"
+        android:textAllCaps="false"
+        android:textColor="#191970"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
