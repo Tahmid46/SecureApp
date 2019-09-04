@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -19,12 +20,16 @@ public class DashboardActivity extends AppCompatActivity {
         myMedBtn=findViewById(R.id.MedId);
         MedNotiBtn=findViewById(R.id.notiId);
 
-        searchBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),MedInfoActivity.class);
-                startActivity(intent);
-            }
-        });
+       try{
+           searchBtn.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Intent intent=new Intent(getApplicationContext(),MedInfoActivity.class);
+                   startActivity(intent);
+               }
+           });
+       }catch (Exception e){
+           Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_LONG).show();
+       }
     }
 }
