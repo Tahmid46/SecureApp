@@ -23,7 +23,7 @@ public class MedInfoActivity extends AppCompatActivity {
 
         searchButton=findViewById(R.id.button);
         searchText=findViewById(R.id.editText3);
-        med_name=findViewById(R.id.medicine_name);
+        med_name=findViewById(R.id.medicine_name); //
 
        try {
            DatabaseAccess meddata = DatabaseAccess.getInstance(getApplicationContext());
