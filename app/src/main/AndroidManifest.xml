@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".MedInfoActivity"></activity>
+        <activity android:name=".MedInfoActivity" />
+        <activity android:name=".ShowInfo" />
+        <activity android:name=".ReminderActivity"></activity>
     </application>
 
 </manifest>

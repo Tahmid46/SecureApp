@@ -31,5 +31,19 @@ public class DashboardActivity extends AppCompatActivity {
        }catch (Exception e){
            Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_LONG).show();
        }
+
+       try{
+
+           MedNotiBtn.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   Intent intent=new Intent(getApplicationContext(),ReminderActivity.class);
+                   startActivity(intent);
+               }
+           });
+       }catch(Exception e){
+           Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
+       }
+
     }
 }
